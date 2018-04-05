@@ -9,7 +9,7 @@ def renewAllBooks(arg):
     tam = len(arg)
     btn = arg
     for i in range(0,tam):
-        btn.click()
+        btn[i].click()
         driver.back()
         btn = driver.find_elements_by_class_name("btn_renovar")
         time.sleep(4)
